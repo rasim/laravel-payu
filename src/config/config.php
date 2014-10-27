@@ -2,9 +2,9 @@
 
 return array(
 
-		// Müşteri id
+		// Merchant ID
 		'merchantId' => "OPU_TEST",
-		// secret key
+		// SECRET KEY
 		'secretKey' => "SECRET_KEY"
 
 );
