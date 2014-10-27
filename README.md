@@ -1,10 +1,43 @@
-laravel-payu
-============
 
 Laravel Payu Api
+=========
 
-Usage;
 
+[![Total Downloads](https://poser.pugx.org/rasim/payu/downloads.svg)](https://packagist.org/packages/rasim/payu) 
+
+
+Installation
+----
+
+* In composer.json;
+
+    ```json
+    "rasim/payu": "dev-master"
+    ```
+    
+* In app.php
+
+    ```php
+    'Rasim\Payu\PayuServiceProvider',
+    ```
+    
+* and for aliases
+
+    ```php
+    'Payu' => 'Rasim\Payu\Facades\Payu',
+    ```
+* Set Config
+
+    ```shell
+    php artisan config:publish rasim/payu
+    ```
+
+Installation
+----
+
+* Usage
+
+    ```php
     // Product Generator
     $pname = "Product name".;
     $pcode = "Product code";
@@ -43,3 +76,4 @@ Usage;
 
     // Creating Payment Button
     Payu::payulu()->renderPaymentForm();
+    ```
