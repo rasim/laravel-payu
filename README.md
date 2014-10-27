@@ -32,10 +32,10 @@ Installation
     php artisan config:publish rasim/payu
     ```
 
-Installation
+Usage
 ----
 
-* Usage
+* Codes
 
     ```php
     // Product Generator
