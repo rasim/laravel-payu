@@ -1,0 +1,23 @@
+{
+    "name": "rasim/payu",
+    "description": "Laravel Payu API",
+    "authors": [
+        {
+            "name": "RaSiM ÖZDİNÇ",
+            "email": "rasimozdinc@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Rasim\\Payu\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
