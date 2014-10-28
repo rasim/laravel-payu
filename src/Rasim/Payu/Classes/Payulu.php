@@ -109,7 +109,7 @@ class PayuLu
         $this->_makeFields();
         $this->_makeForm($autoSubmit);
 
-        echo $this->_htmlCode;
+        return $this->_htmlCode;
     }
 
     private function _makeFields()
