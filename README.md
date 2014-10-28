@@ -39,7 +39,7 @@ Usage
 
     ```php
     // Product Generator
-    $pname = "Product name".;
+    $pname = "Product name";
     $pcode = "Product code";
     $pinfo = "Product info";
     $price = "9.99";
