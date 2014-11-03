@@ -1,6 +1,7 @@
 {
     "name": "rasim/payu",
     "description": "Laravel Payu API",
+    "keywords": ["laravel","payu","api"],
     "authors": [
         {
             "name": "RaSiM ÖZDİNÇ",
