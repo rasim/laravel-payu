@@ -452,7 +452,7 @@ class PayuLu
         return md5($k_opad . pack("H*", md5($k_ipad . $data)));
     }
 
-    function ipnRequest()
+   public function ipnRequest()
     {
         $ipnPid = isset($_POST['IPN_PID']) ? $_POST['IPN_PID'] : '';
         $ipnName = isset($_POST['IPN_PNAME']) ? $_POST['IPN_PNAME'] : '';
