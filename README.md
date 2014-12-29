@@ -77,3 +77,8 @@ Usage
     // Creating Payment Button
     Payu::payulu()->renderPaymentForm();
     ```
+    
+    ```
+    // Payu IPN
+    echo Payu::payulu()->ipnRequest();
+    ```
