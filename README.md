@@ -78,7 +78,7 @@ Usage
     Payu::payulu()->renderPaymentForm();
     ```
     
-    ```
+    ```php
     // Payu IPN
     echo Payu::payulu()->ipnRequest();
     ```
