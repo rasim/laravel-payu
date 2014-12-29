@@ -452,4 +452,20 @@ class PayuLu
         return md5($k_opad . pack("H*", md5($k_ipad . $data)));
     }
 
+    function ipnRequest()
+    {
+        $ipnPid = isset($_POST['IPN_PID']) ? $_POST['IPN_PID'] : '';
+        $ipnName = isset($_POST['IPN_PNAME']) ? $_POST['IPN_PNAME'] : '';
+        $ipnDate = isset($_POST['IPN_DATE']) ? $_POST['IPN_DATE'] : '';
+        $date = date('YmdHis');
+        $hash =
+            strlen($ipnPid[0]) . $ipnPid[0] .
+            strlen($ipnName[0]) . $ipnName[0] .
+            strlen($ipnDate) . $ipnDate .
+            strlen($date) . $date;
+        $hash = hash_hmac('md5', $hash, $this->_secretKey);
+        $result = '<EPAYMENT>' . $date . '|' . $hash . '</EPAYMENT>';
+        return $result;
+    }
+    
 }
