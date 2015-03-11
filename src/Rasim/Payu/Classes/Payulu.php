@@ -370,7 +370,7 @@ class PayuLu
 
     private function _setOrderDate()
     {
-        $this->_OrderDate = date('Y-m-d H:m:s', time());
+        $this->_OrderDate = date('Y-m-d H:i:s', time());
         
     }
 
